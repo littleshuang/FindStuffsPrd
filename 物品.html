@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>物品</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/物品/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/物品/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (背景 -812) -->
+
+      <!-- 背景 (矩形) -->
+      <div id="u957" class="ax_default box_2" data-label="背景">
+        <div id="u957_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u958" class="ax_default sticky_3">
+        <div id="u958_div" class=""></div>
+        <div id="u958_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">操作说明：</span></p><p><span style="font-family:'ArialMT', 'Arial';">1. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击</span><span style="font-family:'ArialMT', 'Arial';">“</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">批量操作</span><span style="font-family:'ArialMT', 'Arial';">”</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">按钮，向下滑动显示“批量操作”菜单，同时物品列表向下移动到“批量操作”菜单下方，物品图片上显示代表可选操作的圆圈；再次点击时，向上滑动收起“批量操作”菜单，同时物品列表向上滑动回原位，物品图片上代表可选操作的圆圈消失；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;&nbsp;&nbsp; 批量操作说明：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;&nbsp;&nbsp; 1.1 点击某物品项时，选中该物品，物品图片上的选择图标切换为选中状态；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;&nbsp;&nbsp; 1.2 点击“删除”按钮时，若还未选中任何物品，显示图1所示提示弹窗；若已选中1个或多个物品，显示图2所示确认弹窗；用户选择“取消”按钮，弹窗消失，用户选择“确认”按钮，弹窗消失，且将被选中物品移至回收站；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2. 点击“添加物品”按钮，进入添加物品页面；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3. 点击“排序”按钮，向下滑动显示“排序”弹窗；再次点击时，向上滑动收起“排序”弹窗；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;&nbsp;&nbsp; 3.1 排序操作说明：点击某排序项时，向上滑动收起“排序”弹窗，物品列表按选定的排序规则排序</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">4. 点击“搜索”按钮，进入搜索页面；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">5. 向左滑动物品项时，显示“删除”icon，点击“删除”icon，显示“取消”和“确认”icon，点击“取消”icon，物品向右滑，回原位；点击“确认”icon，将该物品移入回收站，下方物品上移；</span></p><p><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">显示说明：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1. 物品图片：44*44px</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2. 可选icon：16*16px</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3. 物品名称：字体：PingFang SC Regular 14pt，最多显示20字，超出20字时，显示前20字和...</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">4. 物品位置：字体：PingFang SC Regular 12pt，最多显示24字，超出24字时，显示前24字和...</span></p><p><span style="font-family:'ArialMT', 'Arial';"><br></span></p>
+        </div>
+      </div>
+
+      <!-- TabButtons (组 合) -->
+      <div id="u959" class="ax_default" data-label="TabButtons" data-left="0" data-top="729" data-width="375" data-height="83">
+
+        <!-- Unnamed (底部tab背景) -->
+
+        <!-- Unnamed (矩形) -->
+        <div id="u961" class="ax_default box_2">
+          <div id="u961_div" class=""></div>
+        </div>
+
+        <!-- Me (组 合) -->
+        <div id="u962" class="ax_default" data-label="Me" data-left="284" data-top="737" data-width="23" data-height="43">
+
+          <!-- Me (图片) -->
+          <div id="u963" class="ax_default image" data-label="Me" selectiongroup="标签-图片">
+            <img id="u963_img" class="img " src="images/收纳页/me_u701.png"/>
+          </div>
+
+          <!-- Me (矩形) -->
+          <div id="u964" class="ax_default label" data-label="Me" selectiongroup="标签-文字">
+            <div id="u964_div" class=""></div>
+            <div id="u964_text" class="text ">
+              <p><span>我</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item (组 合) -->
+        <div id="u965" class="ax_default" data-label="Item" data-left="180" data-top="737" data-width="23" data-height="43">
+
+          <!-- Item (图片) -->
+          <div id="u966" class="ax_default image" data-label="Item" selectiongroup="标签-图片">
+            <img id="u966_img" class="img " src="images/收纳页/item_u704.png"/>
+          </div>
+
+          <!-- Item (矩形) -->
+          <div id="u967" class="ax_default label" data-label="Item" selectiongroup="标签-文字">
+            <div id="u967_div" class=""></div>
+            <div id="u967_text" class="text ">
+              <p><span>物品</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box (组 合) -->
+        <div id="u968" class="ax_default" data-label="Box" data-left="72" data-top="737" data-width="23" data-height="43">
+
+          <!-- Box (图片) -->
+          <div id="u969" class="ax_default image" data-label="Box" selectiongroup="标签-图片">
+            <img id="u969_img" class="img " src="images/收纳页/box_u707.png"/>
+          </div>
+
+          <!-- Box (矩形) -->
+          <div id="u970" class="ax_default label" data-label="Box" selectiongroup="标签-文字">
+            <div id="u970_div" class=""></div>
+            <div id="u970_text" class="text ">
+              <p><span>收纳</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ItemList (动态面板) -->
+      <div id="u971" class="ax_default" data-label="ItemList">
+        <div id="u971_state0" class="panel_state" data-label="NotEmpty" style="">
+          <div id="u971_state0_content" class="panel_state_content">
+
+            <!-- List (动态面板) -->
+            <div id="u972" class="ax_default" data-label="List">
+              <div id="u972_state0" class="panel_state" data-label="State1" style="">
+                <div id="u972_state0_content" class="panel_state_content">
+
+                  <!-- Unnamed (中继器) -->
+                  <div id="u973" class="ax_default">
+                    <script id="u973_script" type="axure-repeater-template">
+
+                      <!-- Item (动态面板) -->
+                      <div id="u974" class="ax_default u974" data-label="Item">
+                        <div id="u974_state0" class="panel_state u974_state0" data-label="State1" style="">
+                          <div id="u974_state0_content" class="panel_state_content u974_state0_content">
+
+                            <!-- Item (组 合) -->
+                            <div id="u975" class="ax_default u975" data-label="Item" data-left="0" data-top="8" data-width="468" data-height="52">
+
+                              <!-- Unnamed (水平线) -->
+                              <div id="u976" class="ax_default line u976">
+                                <img id="u976_img" class="img u976_img" src="images/物品/u976.png"/>
+                              </div>
+
+                              <!-- location (矩形) -->
+                              <div id="u977" class="ax_default label u977" data-label="location">
+                                <div id="u977_div" class="u977_div"></div>
+                                <div id="u977_text" class="text u977_text">
+                                  <p><span>xx房间/xx收纳箱/xx收纳箱</span></p>
+                                </div>
+                              </div>
+
+                              <!-- name (矩形) -->
+                              <div id="u978" class="ax_default label u978" data-label="name">
+                                <div id="u978_div" class="u978_div"></div>
+                                <div id="u978_text" class="text u978_text">
+                                  <p><span>物品名称</span></p>
+                                </div>
+                              </div>
+
+                              <!-- Select (图片) -->
+                              <div id="u979" class="ax_default image ax_default_hidden u979" data-label="Select" style="display:none; visibility: hidden">
+                                <img id="u979_img" class="img u979_img" src="images/选择物品/select_u948.png"/>
+                              </div>
+
+                              <!-- Select (图片) [footnote] -->
+                              <div id="u979_ann" class="annotation u979_ann" style="display: none; visibility: hidden;"></div>
+
+                              <!-- image (图片) -->
+                              <div id="u980" class="ax_default image u980" data-label="image">
+                                <img id="u980_img" class="img u980_img" src="images/选择物品/img_u949.png"/>
+                              </div>
+
+                              <!-- Delete (图片) -->
+                              <div id="u981" class="ax_default image u981" data-label="Delete">
+                                <img id="u981_img" class="img u981_img" src="images/收纳详情页/delete_u753.png"/>
+                              </div>
+
+                              <!-- Delete (图片) [footnote] -->
+                              <div id="u981_ann" class="annotation u981_ann"></div>
+
+                              <!-- Locate (图片) -->
+                              <div id="u982" class="ax_default image u982" data-label="Locate">
+                                <img id="u982_img" class="img u982_img" src="images/收纳详情页/locate_u754.png"/>
+                              </div>
+
+                              <!-- Locate (图片) [footnote] -->
+                              <div id="u982_ann" class="annotation u982_ann"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </script>
+                    <div id="u973-1" class="preeval" style="width: 467px; height: 60px;">
+
+                      <!-- Item (动态面板) -->
+                      <div id="u974-1" class="ax_default u974" data-label="Item" style="visibility: inherit">
+                        <div id="u974-1_state0" class="panel_state u974_state0" data-label="State1" style=" width: 467px; height: 60px;visibility: inherit">
+                          <div id="u974-1_state0_content" class="panel_state_content u974_state0_content" style="visibility: inherit">
+
+                            <!-- Item (组 合) -->
+                            <div id="u975-1" class="ax_default u975" data-label="Item" style="visibility: inherit" data-left="0" data-top="8" data-width="468" data-height="52">
+
+                              <!-- Unnamed (水平线) -->
+                              <div id="u976-1" class="ax_default line u976" style="width: 468px; height: 1px; left: 0px; top: 59px;visibility: inherit">
+                                <img id="u976-1_img" class="img u976_img" src="images/物品/u976.png"/>
+                              </div>
+
+                              <!-- location (矩形) -->
+                              <div id="u977-1" class="ax_default label u977" data-label="location" style="width: 315px; height: 17px; left: 60px; top: 32px;visibility: inherit">
+                                <div id="u977-1_div" class="u977_div" style="width: 315px; height: 17px;visibility: inherit"></div>
+                                <div id="u977-1_text" class="text u977_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>xx房间/xx收纳箱/xx收纳箱</span></p>
+                                </div>
+                              </div>
+
+                              <!-- name (矩形) -->
+                              <div id="u978-1" class="ax_default label u978" data-label="name" style="width: 315px; height: 20px; left: 60px; top: 8px;visibility: inherit">
+                                <div id="u978-1_div" class="u978_div" style="width: 315px; height: 20px;visibility: inherit"></div>
+                                <div id="u978-1_text" class="text u978_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>物品名称</span></p>
+                                </div>
+                              </div>
+
+                              <!-- Select (图片) -->
+                              <div id="u979-1" class="ax_default image u979" data-label="Select" style="width: 16px; height: 16px; left: 344px; top: 22px;display:none; visibility: hidden">
+                                <img id="u979-1_img" class="img u979_img" src="images/选择物品/select_u948.png"/>
+                              </div>
+
+                              <!-- Select (图片) [footnote] -->
+                              <div id="u979-1_ann" class="annotation u979_ann" style="display: none; visibility: hidden;visibility: inherit"></div>
+
+                              <!-- image (图片) -->
+                              <div id="u980-1" class="ax_default image u980" data-label="image" style="width: 44px; height: 44px; left: 8px; top: 8px;visibility: inherit">
+                                <img id="u980-1_img" class="img u980_img" src="images/选择物品/img_u949.png"/>
+                              </div>
+
+                              <!-- Delete (图片) -->
+                              <div id="u981-1" class="ax_default image u981" data-label="Delete" style="width: 24px; height: 24px; left: 400px; top: 15px;visibility: inherit">
+                                <img id="u981-1_img" class="img u981_img" src="images/收纳详情页/delete_u753.png"/>
+                              </div>
+
+                              <!-- Delete (图片) [footnote] -->
+                              <div id="u981-1_ann" class="annotation u981_ann" style="visibility: inherit"></div>
+
+                              <!-- Locate (图片) -->
+                              <div id="u982-1" class="ax_default image u982" data-label="Locate" style="width: 24px; height: 24px; left: 441px; top: 15px;visibility: inherit">
+                                <img id="u982-1_img" class="img u982_img" src="images/收纳详情页/locate_u754.png"/>
+                              </div>
+
+                              <!-- Locate (图片) [footnote] -->
+                              <div id="u982-1_ann" class="annotation u982_ann" style="visibility: inherit"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="u973-2" class="preeval" style="width: 467px; height: 60px;">
+
+                      <!-- Item (动态面板) -->
+                      <div id="u974-2" class="ax_default u974" data-label="Item" style="visibility: inherit">
+                        <div id="u974-2_state0" class="panel_state u974_state0" data-label="State1" style=" width: 467px; height: 60px;visibility: inherit">
+                          <div id="u974-2_state0_content" class="panel_state_content u974_state0_content" style="visibility: inherit">
+
+                            <!-- Item (组 合) -->
+                            <div id="u975-2" class="ax_default u975" data-label="Item" style="visibility: inherit" data-left="0" data-top="8" data-width="468" data-height="52">
+
+                              <!-- Unnamed (水平线) -->
+                              <div id="u976-2" class="ax_default line u976" style="width: 468px; height: 1px; left: 0px; top: 59px;visibility: inherit">
+                                <img id="u976-2_img" class="img u976_img" src="images/物品/u976.png"/>
+                              </div>
+
+                              <!-- location (矩形) -->
+                              <div id="u977-2" class="ax_default label u977" data-label="location" style="width: 315px; height: 17px; left: 60px; top: 32px;visibility: inherit">
+                                <div id="u977-2_div" class="u977_div" style="width: 315px; height: 17px;visibility: inherit"></div>
+                                <div id="u977-2_text" class="text u977_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>xx房间/xx收纳箱/xx收纳箱</span></p>
+                                </div>
+                              </div>
+
+                              <!-- name (矩形) -->
+                              <div id="u978-2" class="ax_default label u978" data-label="name" style="width: 315px; height: 20px; left: 60px; top: 8px;visibility: inherit">
+                                <div id="u978-2_div" class="u978_div" style="width: 315px; height: 20px;visibility: inherit"></div>
+                                <div id="u978-2_text" class="text u978_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>物品名称</span></p>
+                                </div>
+                              </div>
+
+                              <!-- Select (图片) -->
+                              <div id="u979-2" class="ax_default image u979" data-label="Select" style="width: 16px; height: 16px; left: 344px; top: 22px;display:none; visibility: hidden">
+                                <img id="u979-2_img" class="img u979_img" src="images/选择物品/select_u948.png"/>
+                              </div>
+
+                              <!-- Select (图片) [footnote] -->
+                              <div id="u979-2_ann" class="annotation u979_ann" style="display: none; visibility: hidden;visibility: inherit"></div>
+
+                              <!-- image (图片) -->
+                              <div id="u980-2" class="ax_default image u980" data-label="image" style="width: 44px; height: 44px; left: 8px; top: 8px;visibility: inherit">
+                                <img id="u980-2_img" class="img u980_img" src="images/选择物品/img_u949.png"/>
+                              </div>
+
+                              <!-- Delete (图片) -->
+                              <div id="u981-2" class="ax_default image u981" data-label="Delete" style="width: 24px; height: 24px; left: 400px; top: 15px;visibility: inherit">
+                                <img id="u981-2_img" class="img u981_img" src="images/收纳详情页/delete_u753.png"/>
+                              </div>
+
+                              <!-- Delete (图片) [footnote] -->
+                              <div id="u981-2_ann" class="annotation u981_ann" style="visibility: inherit"></div>
+
+                              <!-- Locate (图片) -->
+                              <div id="u982-2" class="ax_default image u982" data-label="Locate" style="width: 24px; height: 24px; left: 441px; top: 15px;visibility: inherit">
+                                <img id="u982-2_img" class="img u982_img" src="images/收纳详情页/locate_u754.png"/>
+                              </div>
+
+                              <!-- Locate (图片) [footnote] -->
+                              <div id="u982-2_ann" class="annotation u982_ann" style="visibility: inherit"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="u973-3" class="preeval" style="width: 467px; height: 60px;">
+
+                      <!-- Item (动态面板) -->
+                      <div id="u974-3" class="ax_default u974" data-label="Item" style="visibility: inherit">
+                        <div id="u974-3_state0" class="panel_state u974_state0" data-label="State1" style=" width: 467px; height: 60px;visibility: inherit">
+                          <div id="u974-3_state0_content" class="panel_state_content u974_state0_content" style="visibility: inherit">
+
+                            <!-- Item (组 合) -->
+                            <div id="u975-3" class="ax_default u975" data-label="Item" style="visibility: inherit" data-left="0" data-top="8" data-width="468" data-height="52">
+
+                              <!-- Unnamed (水平线) -->
+                              <div id="u976-3" class="ax_default line u976" style="width: 468px; height: 1px; left: 0px; top: 59px;visibility: inherit">
+                                <img id="u976-3_img" class="img u976_img" src="images/物品/u976.png"/>
+                              </div>
+
+                              <!-- location (矩形) -->
+                              <div id="u977-3" class="ax_default label u977" data-label="location" style="width: 315px; height: 17px; left: 60px; top: 32px;visibility: inherit">
+                                <div id="u977-3_div" class="u977_div" style="width: 315px; height: 17px;visibility: inherit"></div>
+                                <div id="u977-3_text" class="text u977_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>xx房间/xx收纳箱/xx收纳箱</span></p>
+                                </div>
+                              </div>
+
+                              <!-- name (矩形) -->
+                              <div id="u978-3" class="ax_default label u978" data-label="name" style="width: 315px; height: 20px; left: 60px; top: 8px;visibility: inherit">
+                                <div id="u978-3_div" class="u978_div" style="width: 315px; height: 20px;visibility: inherit"></div>
+                                <div id="u978-3_text" class="text u978_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>物品名称</span></p>
+                                </div>
+                              </div>
+
+                              <!-- Select (图片) -->
+                              <div id="u979-3" class="ax_default image u979" data-label="Select" style="width: 16px; height: 16px; left: 344px; top: 22px;display:none; visibility: hidden">
+                                <img id="u979-3_img" class="img u979_img" src="images/选择物品/select_u948.png"/>
+                              </div>
+
+                              <!-- Select (图片) [footnote] -->
+                              <div id="u979-3_ann" class="annotation u979_ann" style="display: none; visibility: hidden;visibility: inherit"></div>
+
+                              <!-- image (图片) -->
+                              <div id="u980-3" class="ax_default image u980" data-label="image" style="width: 44px; height: 44px; left: 8px; top: 8px;visibility: inherit">
+                                <img id="u980-3_img" class="img u980_img" src="images/选择物品/img_u949.png"/>
+                              </div>
+
+                              <!-- Delete (图片) -->
+                              <div id="u981-3" class="ax_default image u981" data-label="Delete" style="width: 24px; height: 24px; left: 400px; top: 15px;visibility: inherit">
+                                <img id="u981-3_img" class="img u981_img" src="images/收纳详情页/delete_u753.png"/>
+                              </div>
+
+                              <!-- Delete (图片) [footnote] -->
+                              <div id="u981-3_ann" class="annotation u981_ann" style="visibility: inherit"></div>
+
+                              <!-- Locate (图片) -->
+                              <div id="u982-3" class="ax_default image u982" data-label="Locate" style="width: 24px; height: 24px; left: 441px; top: 15px;visibility: inherit">
+                                <img id="u982-3_img" class="img u982_img" src="images/收纳详情页/locate_u754.png"/>
+                              </div>
+
+                              <!-- Locate (图片) [footnote] -->
+                              <div id="u982-3_ann" class="annotation u982_ann" style="visibility: inherit"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="u973-4" class="preeval" style="width: 467px; height: 60px;">
+
+                      <!-- Item (动态面板) -->
+                      <div id="u974-4" class="ax_default u974" data-label="Item" style="visibility: inherit">
+                        <div id="u974-4_state0" class="panel_state u974_state0" data-label="State1" style=" width: 467px; height: 60px;visibility: inherit">
+                          <div id="u974-4_state0_content" class="panel_state_content u974_state0_content" style="visibility: inherit">
+
+                            <!-- Item (组 合) -->
+                            <div id="u975-4" class="ax_default u975" data-label="Item" style="visibility: inherit" data-left="0" data-top="8" data-width="468" data-height="52">
+
+                              <!-- Unnamed (水平线) -->
+                              <div id="u976-4" class="ax_default line u976" style="width: 468px; height: 1px; left: 0px; top: 59px;visibility: inherit">
+                                <img id="u976-4_img" class="img u976_img" src="images/物品/u976.png"/>
+                              </div>
+
+                              <!-- location (矩形) -->
+                              <div id="u977-4" class="ax_default label u977" data-label="location" style="width: 315px; height: 17px; left: 60px; top: 32px;visibility: inherit">
+                                <div id="u977-4_div" class="u977_div" style="width: 315px; height: 17px;visibility: inherit"></div>
+                                <div id="u977-4_text" class="text u977_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>xx房间/xx收纳箱/xx收纳箱</span></p>
+                                </div>
+                              </div>
+
+                              <!-- name (矩形) -->
+                              <div id="u978-4" class="ax_default label u978" data-label="name" style="width: 315px; height: 20px; left: 60px; top: 8px;visibility: inherit">
+                                <div id="u978-4_div" class="u978_div" style="width: 315px; height: 20px;visibility: inherit"></div>
+                                <div id="u978-4_text" class="text u978_text" style="position: absolute;left: 0px;top: 0px;width: 307px;visibility: inherit">
+                                  <p><span>物品名称</span></p>
+                                </div>
+                              </div>
+
+                              <!-- Select (图片) -->
+                              <div id="u979-4" class="ax_default image u979" data-label="Select" style="width: 16px; height: 16px; left: 344px; top: 22px;display:none; visibility: hidden">
+                                <img id="u979-4_img" class="img u979_img" src="images/选择物品/select_u948.png"/>
+                              </div>
+
+                              <!-- Select (图片) [footnote] -->
+                              <div id="u979-4_ann" class="annotation u979_ann" style="display: none; visibility: hidden;visibility: inherit"></div>
+
+                              <!-- image (图片) -->
+                              <div id="u980-4" class="ax_default image u980" data-label="image" style="width: 44px; height: 44px; left: 8px; top: 8px;visibility: inherit">
+                                <img id="u980-4_img" class="img u980_img" src="images/选择物品/img_u949.png"/>
+                              </div>
+
+                              <!-- Delete (图片) -->
+                              <div id="u981-4" class="ax_default image u981" data-label="Delete" style="width: 24px; height: 24px; left: 400px; top: 15px;visibility: inherit">
+                                <img id="u981-4_img" class="img u981_img" src="images/收纳详情页/delete_u753.png"/>
+                              </div>
+
+                              <!-- Delete (图片) [footnote] -->
+                              <div id="u981-4_ann" class="annotation u981_ann" style="visibility: inherit"></div>
+
+                              <!-- Locate (图片) -->
+                              <div id="u982-4" class="ax_default image u982" data-label="Locate" style="width: 24px; height: 24px; left: 441px; top: 15px;visibility: inherit">
+                                <img id="u982-4_img" class="img u982_img" src="images/收纳详情页/locate_u754.png"/>
+                              </div>
+
+                              <!-- Locate (图片) [footnote] -->
+                              <div id="u982-4_ann" class="annotation u982_ann" style="visibility: inherit"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u971_state1" class="panel_state" data-label="Empty" style="visibility: hidden;">
+          <div id="u971_state1_content" class="panel_state_content">
+
+            <!-- Unnamed (空页面) -->
+
+            <!-- Unnamed (矩形) -->
+            <div id="u984" class="ax_default box_2">
+              <div id="u984_div" class=""></div>
+              <div id="u984_text" class="text ">
+                <p><span>这里啥也没有</span></p><p><span>快添加点东西吧</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ItemList (动态面板) [footnote] -->
+      <div id="u971_ann" class="annotation"></div>
+
+      <!-- Rank (组 合) -->
+      <div id="u985" class="ax_default ax_default_hidden" data-label="Rank" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u986" class="ax_default box_2">
+          <div id="u986_div" class=""></div>
+        </div>
+
+        <!-- AddDateDown (矩形) -->
+        <div id="u987" class="ax_default label" data-label="AddDateDown">
+          <div id="u987_div" class=""></div>
+          <div id="u987_text" class="text ">
+            <p><span>添加时间升序</span></p>
+          </div>
+        </div>
+
+        <!-- AdddateDown (矩形) -->
+        <div id="u988" class="ax_default label" data-label="AdddateDown">
+          <div id="u988_div" class=""></div>
+          <div id="u988_text" class="text ">
+            <p><span>添加时间降序</span></p>
+          </div>
+        </div>
+
+        <!-- OutdateUp (矩形) -->
+        <div id="u989" class="ax_default label" data-label="OutdateUp">
+          <div id="u989_div" class=""></div>
+          <div id="u989_text" class="text ">
+            <p><span>到期时间升序</span></p>
+          </div>
+        </div>
+
+        <!-- OutdateDown (矩形) -->
+        <div id="u990" class="ax_default label" data-label="OutdateDown">
+          <div id="u990_div" class=""></div>
+          <div id="u990_text" class="text ">
+            <p><span>到期时间降序</span></p>
+          </div>
+        </div>
+
+        <!-- NumUp (矩形) -->
+        <div id="u991" class="ax_default label" data-label="NumUp">
+          <div id="u991_div" class=""></div>
+          <div id="u991_text" class="text ">
+            <p><span>数量升序</span></p>
+          </div>
+        </div>
+
+        <!-- NumDown (矩形) -->
+        <div id="u992" class="ax_default label" data-label="NumDown">
+          <div id="u992_div" class=""></div>
+          <div id="u992_text" class="text ">
+            <p><span>数量降序</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (三角形) -->
+        <div id="u993" class="ax_default box_1">
+          <img id="u993_img" class="img " src="images/物品/u993.png"/>
+        </div>
+      </div>
+
+      <!-- Batch (组 合) -->
+      <div id="u994" class="ax_default ax_default_hidden" data-label="Batch" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u995" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+          <div id="u995_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (水平线) -->
+        <div id="u996" class="ax_default line">
+          <img id="u996_img" class="img " src="images/房间管理/line_u856.png"/>
+        </div>
+
+        <!-- Delete (矩形) -->
+        <div id="u997" class="ax_default label" data-label="Delete">
+          <div id="u997_div" class=""></div>
+          <div id="u997_text" class="text ">
+            <p><span>删除</span></p>
+          </div>
+        </div>
+
+        <!-- Delete (矩形) [footnote] -->
+        <div id="u997_ann" class="annotation"></div>
+
+        <!-- Add (矩形) -->
+        <div id="u998" class="ax_default label" data-label="Add">
+          <div id="u998_div" class=""></div>
+          <div id="u998_text" class="text ">
+            <p><span>添加</span></p>
+          </div>
+        </div>
+
+        <!-- Add (矩形) [footnote] -->
+        <div id="u998_ann" class="annotation"></div>
+
+        <!-- Move (矩形) -->
+        <div id="u999" class="ax_default label" data-label="Move">
+          <div id="u999_div" class=""></div>
+          <div id="u999_text" class="text ">
+            <p><span>移动</span></p>
+          </div>
+        </div>
+
+        <!-- Move (矩形) [footnote] -->
+        <div id="u999_ann" class="annotation"></div>
+      </div>
+
+      <!-- Title (组 合) -->
+      <div id="u1000" class="ax_default" data-label="Title" data-left="0" data-top="44" data-width="375" data-height="45">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1001" class="ax_default box_2">
+          <div id="u1001_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (水平线) -->
+        <div id="u1002" class="ax_default line">
+          <img id="u1002_img" class="img " src="images/房间管理/line_u856.png"/>
+        </div>
+
+        <!-- AddItem (图片) -->
+        <div id="u1003" class="ax_default image" data-label="AddItem">
+          <img id="u1003_img" class="img " src="images/收纳页/addbox_u737.png"/>
+        </div>
+
+        <!-- AddItem (图片) [footnote] -->
+        <div id="u1003_ann" class="annotation"></div>
+
+        <!-- 物品页面 (矩形) -->
+        <div id="u1004" class="ax_default label" data-label="物品页面">
+          <div id="u1004_div" class=""></div>
+          <div id="u1004_text" class="text ">
+            <p><span>物品</span></p>
+          </div>
+        </div>
+
+        <!-- 物品页面 (矩形) [footnote] -->
+        <div id="u1004_ann" class="annotation"></div>
+
+        <!-- BatchOptions (图片) -->
+        <div id="u1005" class="ax_default image" data-label="BatchOptions">
+          <img id="u1005_img" class="img " src="images/物品/batchoptions_u1005.png"/>
+        </div>
+
+        <!-- BatchOptions (图片) [footnote] -->
+        <div id="u1005_ann" class="annotation"></div>
+      </div>
+
+      <!-- DeleteConfirm (组 合) -->
+      <div id="u1006" class="ax_default ax_default_hidden" data-label="DeleteConfirm" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+
+        <!-- ParentBg (矩形) -->
+        <div id="u1007" class="ax_default box_2" data-label="ParentBg">
+          <div id="u1007_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1008" class="ax_default">
+          <div id="u1008_div" class=""></div>
+        </div>
+
+        <!-- Confirm (矩形) -->
+        <div id="u1009" class="ax_default" data-label="Confirm">
+          <div id="u1009_div" class=""></div>
+          <div id="u1009_text" class="text ">
+            <p><span>确认</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (垂直线) -->
+        <div id="u1010" class="ax_default line">
+          <img id="u1010_img" class="img " src="images/房间管理/u860.png"/>
+        </div>
+
+        <!-- Cancel (矩形) -->
+        <div id="u1011" class="ax_default" data-label="Cancel">
+          <div id="u1011_div" class=""></div>
+          <div id="u1011_text" class="text ">
+            <p><span>取消</span></p>
+          </div>
+        </div>
+
+        <!-- Message (矩形) -->
+        <div id="u1012" class="ax_default refs-design-apple" data-label="Message">
+          <div id="u1012_div" class=""></div>
+          <div id="u1012_text" class="text ">
+            <p><span>所选物品将被移入回收站</span></p>
+          </div>
+        </div>
+
+        <!-- Title (矩形) -->
+        <div id="u1013" class="ax_default refs-design-apple" data-label="Title">
+          <div id="u1013_div" class=""></div>
+          <div id="u1013_text" class="text ">
+            <p><span>删除</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search (图片) -->
+      <div id="u1014" class="ax_default image" data-label="Search">
+        <img id="u1014_img" class="img " src="images/收纳页/search_u740.png"/>
+      </div>
+
+      <!-- Search (图片) [footnote] -->
+      <div id="u1014_ann" class="annotation"></div>
+
+      <!-- toast (矩形) -->
+      <div id="u1015" class="ax_default _形状 ax_default_hidden" data-label="toast" style="display:none; visibility: hidden">
+        <div id="u1015_div" class=""></div>
+        <div id="u1015_text" class="text ">
+          <p><span>操作成功</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

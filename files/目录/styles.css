@@ -26,7 +26,7 @@
   left:0px;
   top:0px;
   width:180px;
-  height:750px;
+  height:700px;
   background-image:none;
 }
 #u0_state0_content {
@@ -340,21 +340,13 @@
   width:180px;
   height:50px;
 }
-#u1-15 {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:700px;
-  width:180px;
-  height:50px;
-}
 #u1 {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
   width:180px;
-  height:750px;
+  height:700px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
